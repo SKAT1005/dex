@@ -21,7 +21,6 @@ import {CoinsToDecimals} from "../../ton/dex/utils";
 import {SettingsModal} from "./components/modals/Settings";
 import {ConfirmSwapModal} from "./components/modals/ConfirmSwap";
 import axios from "axios";
-import {useTonAddress} from "@tonconnect/ui-react";
 
 export default function SwapPage() {
     const navigator = useNavigate();
@@ -89,8 +88,8 @@ export default function SwapPage() {
     } = useForm({mode: "onChange"});
 
 
-    const LeftTokenAddress = swapLeft.token.address.toString()
-    const RightTokenAddress = swapRight.token.address.toString()
+    const LeftTokenAddress = (swapLeft?.token?.address ?? '').toString()
+    const RightTokenAddress = (swapRight?.token?.address ?? '').toString()
 
     const units = parseFloat(getValues('left'))
 

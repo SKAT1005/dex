@@ -133,12 +133,8 @@ export function DefaultHeader() {
                 </div>
               ) : (
                 <Nav.Item
-                  className="btn btn-sm btn-primary btn-sm-mobile text-nowrap"
                   onClick={() => DeLabConnector.openModal()}
                 >
-                  <i className="fa-solid fa-wallet me-2" />
-                  <span>Connect</span>
-                  <span className="d-inline d-lg-none d-xl-inline">Wallet</span>
                 </Nav.Item>
               )}
             </div>
@@ -166,19 +162,6 @@ export function DefaultHeader() {
                       onClick={() => setExpanded(false)}
                     >
                       Swap
-                    </Link>
-                  </Nav.Item>
-                  <Nav.Item>
-                    <Link
-                      className={`nav-link text-nowrap ${
-                        location.pathname.slice(0, 10) === "/liquidity"
-                          ? "active-link"
-                          : ""
-                      }`}
-                      to="/liquidity"
-                      onClick={() => setExpanded(false)}
-                    >
-                      Liquidity
                     </Link>
                   </Nav.Item>
                   <NavDropdown
