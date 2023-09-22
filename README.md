@@ -84,7 +84,7 @@ npm run build
 
 # Start the project in development mode
 npm run dev
-
+```
 
 
 ## Authors
