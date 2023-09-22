@@ -46,7 +46,7 @@
 - **Flexibility**: Supports various cryptocurrencies and tokens.
 
 ## Main Components and Functions
- - ###Components
+ ###- Components
    - App.tsx: Main application component.
    - ScrollToTop.tsx: Component for scrolling the page to the top.
    - context.tsx: Contextual state storage of the application.
