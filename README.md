@@ -46,14 +46,14 @@
 - **Flexibility**: Supports various cryptocurrencies and tokens.
 
 ## Main Components and Functions
- ###- Components
+### Components
    - App.tsx: Main application component.
    - ScrollToTop.tsx: Component for scrolling the page to the top.
    - context.tsx: Contextual state storage of the application.
    - deLabContext.tsx: Additional contextual storage.
    - main.tsx: Main entry point to the application.
    - wallets-list.ts: List of wallets for connection.
- - ###Hooks
+ ### Hooks
    - useCalcPrice.ts: Hook for price calculation.
    - useForceUpdate.ts: Hook for forced component update.
    - useFormatPriceImpact.tsx: Hook for formatting price impact.
@@ -61,7 +61,7 @@
    - useSlicedAddress.ts: Hook for address truncation.
    - useSwitchTheme.ts: Hook for theme switching.
    - useTonConnectWallet.ts: Hook for TON wallet connection.
- - ###Templates
+ ### Templates
    - AddLiquidity.tsx: Liquidity addition.
    - ComingSoon.tsx: "Coming Soon" page.
    - Farms.tsx: Mining farms.
