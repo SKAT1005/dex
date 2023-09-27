@@ -20,11 +20,9 @@ export default defineConfig({
   },
   optimizeDeps: {
     esbuildOptions: {
-      // Преобразование глобальных переменных Node.js в globalThis для браузера
       define: {
         global: 'globalThis',
       },
-      // Включение esbuild плагина для полифиллинга Node.js
       plugins: [
         NodeGlobalsPolyfillPlugin({
           buffer: true,
@@ -33,18 +31,16 @@ export default defineConfig({
     },
   },
   build: {
-    // Указание цели сборки на ESNext
     target: ['ESNext'],
     rollupOptions: {
       plugins: [
-        // Использование плагина для полифиллинга Node.js
         nodePolyfills(),
         NodeModulesPolyfillPlugin(),
         nodeResolve({ browser: true }),
       ],
     },
     commonjsOptions: {
-      transformMixedEsModules: true, // Включение опции для смешанных модулей ES
+      transformMixedEsModules: true,
     },
   },
 });
